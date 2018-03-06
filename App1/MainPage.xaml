@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <Editor x:Name="txt" Text="Ingrese un texto..." />
+            <Button Text="Hablar!" x:Name="btn" />
+
+            <Button Text="GPS!" x:Name="btnGPS" Clicked="btnGPS_Clicked" />
+            <Button Text="GPS by Google Services" x:Name="btnGoogleServices" Clicked="btnGoogleServices_Clicked" />
+            <Label Text="Latitud..." x:Name="txtLatitud" />
+            
+            <Label Text="Status..." x:Name="txtStatus" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
